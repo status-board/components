@@ -19,16 +19,14 @@ import {
     WidgetStatusBadge,
     WidgetCounter,
     GitlabIcon,
-} from '../src/';
+} from '../src';
 
 const props = {};
 
 storiesOf('Widget', module)
     .add('Widget', () => (
         <ThemeProvider theme={defaultTheme}>
-            <Widget
-                style={{}}
-            >Hello</Widget>
+            <Widget style={{}}>Hello</Widget>
         </ThemeProvider>
     ))
     .add('WidgetHeader', () => (
@@ -50,7 +48,9 @@ storiesOf('Widget', module)
                 disablePadding={false}
                 isHeaderless={false}
                 style={{}}
-            >Hello</WidgetBody>
+            >
+                Hello
+            </WidgetBody>
         </ThemeProvider>
     ))
     .add('WidgetLoader', () => (
@@ -65,7 +65,7 @@ storiesOf('Widget', module)
             <WidgetListItem
                 align="center"
                 meta="Meta"
-                onClick={()=>{}}
+                onClick={() => console.log('Click')}
                 post="Post"
                 pre="Pre"
                 style={{}}
@@ -101,10 +101,7 @@ storiesOf('Widget', module)
     ))
     .add('WidgetAvatar', () => (
         <ThemeProvider theme={defaultTheme}>
-            <WidgetAvatar
-                size={36}
-                style={{}}
-            >Hello</WidgetAvatar>
+            <WidgetAvatar size={36} style={{}}>Hello</WidgetAvatar>
         </ThemeProvider>
     ))
     .add('WidgetStatusChip', () => (
@@ -130,12 +127,12 @@ storiesOf('Widget', module)
     .add('WidgetCounter', () => (
         <ThemeProvider theme={defaultTheme}>
             <WidgetCounter
-            align="center"
-            count={9}
-            preLabel="Pre Label"
-            postLabel="Post Label"
-            theme={defaultTheme}
-            unit={9}
+                align="center"
+                count={9}
+                preLabel="Pre Label"
+                postLabel="Post Label"
+                theme={defaultTheme}
+                unit={9}
             />
         </ThemeProvider>
     ));

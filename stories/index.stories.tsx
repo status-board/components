@@ -6,23 +6,17 @@ import { defaultTheme } from '@status-board/theme-manager';
 
 import {
     TrapApiError,
-    Text,
     ExternalLink,
-} from '../src/';
+} from '../src';
 
 storiesOf('Welcome', module)
     .add('TrapApiError', () => (
-        <TrapApiError
-            error={{ message: 'Error' }}
-        >Hello</TrapApiError>
-    ))
-    .add('Text', () => (
         <ThemeProvider theme={defaultTheme}>
-            <Text
-                tag="h1"
-                type="default"
-                variant="default"
-            >Hello</Text>
+            <TrapApiError error={{ message: 'Error' }}>Hello</TrapApiError>
         </ThemeProvider>
     ))
-    .add('ExternalLink', () => <ExternalLink>Hello</ExternalLink>);
+    .add('ExternalLink', () => (
+        <ThemeProvider theme={defaultTheme}>
+            <ExternalLink>Hello</ExternalLink>
+        </ThemeProvider>
+    ));

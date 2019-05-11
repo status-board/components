@@ -1,6 +1,9 @@
 {
+  "alias": [
+    "components.status-board.io"
+  ],
+  "name": "components.status-board.io",
   "version": 2,
-  "name": "components",
   "builds": [
     {
       "src": "package.json",
