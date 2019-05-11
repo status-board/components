@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import { CSSProperties, ReactElement, ReactNode } from 'react';
+import { ReactElement, ReactNode } from 'react';
 import { withTheme } from 'emotion-theming';
 import { Theme } from '@status-board/theme-manager/lib/types';
 
