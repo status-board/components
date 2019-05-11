@@ -1,9 +1,9 @@
-# ui
+# components
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 
-@status-board/ui
+@status-board/components
 
-`npm i --save-dev @status-board/ui`
+`npm i --save-dev @status-board/components`
 
 ## Contributors
 
