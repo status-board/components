@@ -10,7 +10,7 @@ interface Props {
     prefix?: number;
     suffix: React.ReactNode;
     style: CSSProperties;
-    theme: Theme
+    theme: Theme;
 }
 
 const WidgetLabel = (props: Props) => {

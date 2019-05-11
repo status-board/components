@@ -32,8 +32,16 @@ export default function WidgetCounter(props: Props) {
             }
             <Count align={align}>
                 <CountInner>
-                    <CountText>{count} </CountText>
-                    {unit && <Unit>{unit} </Unit>}
+                    <CountText>
+                        {count}
+                        {' '}
+                    </CountText>
+                    {unit && (
+                        <Unit>
+                            {unit}
+                            {' '}
+                        </Unit>
+                    )}
                 </CountInner>
             </Count>
             {

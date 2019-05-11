@@ -1,13 +1,13 @@
 import React from 'react';
-import SpinnerContainer from './SpinnerContainer';
 import BallBeat from 'react-pure-loaders/build/BallBeat';
+import SpinnerContainer from './SpinnerContainer';
 
 interface WidgetLoaderProps {
     color: string;
 }
 
 const WidgetLoader = ({ color }: WidgetLoaderProps) => (
-    <SpinnerContainer><BallBeat color={color} loading/></SpinnerContainer>
+    <SpinnerContainer><BallBeat color={color} loading /></SpinnerContainer>
 );
 
 export default WidgetLoader;

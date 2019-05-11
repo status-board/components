@@ -26,6 +26,8 @@ const css = {
     ...(props: Props) => typography(props.theme, 'display'),
 };
 
-const Header = ({ children, style }: Props): ReactElement => <header css={css} style={style}>{children}</header>;
+const Header = ({ children, style }: Props): ReactElement => (
+    <header css={css} style={style}>{children}</header>
+);
 
 export default withTheme(Header);

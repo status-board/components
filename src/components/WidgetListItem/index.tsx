@@ -1,11 +1,11 @@
 import React, { CSSProperties } from 'react';
+import { typography } from '@status-board/theme-manager';
+import { Theme } from '@status-board/theme-manager/lib/types';
+import { withTheme } from 'emotion-theming';
 import Item from './Item';
 import Post from './Post';
 import Pre from './Pre';
 import Title from './Title';
-import { typography } from '@status-board/theme-manager';
-import { Theme } from '@status-board/theme-manager/lib/types';
-import { withTheme } from 'emotion-theming';
 
 interface Props {
     align: string;
@@ -14,7 +14,7 @@ interface Props {
     post?: string;
     pre?: string;
     style: CSSProperties;
-    theme: Theme
+    theme: Theme;
     title: string;
 }
 
@@ -46,14 +46,16 @@ const WidgetListItem = (props: Props) => {
         postNode = <Post>{post}</Post>;
     }
 
-    return <Item align={align} style={style} onClick={onClick}>
-        {preNode}
-        <div style={{ flexGrow: 1 }}>
-            <Title>{title}</Title>
-            {metaNode}
-        </div>
-        {postNode}
-    </Item>;
+    return (
+        <Item align={align} style={style} onClick={onClick}>
+            {preNode}
+            <div style={{ flexGrow: 1 }}>
+                <Title>{title}</Title>
+                {metaNode}
+            </div>
+            {postNode}
+        </Item>
+    );
 };
 
 WidgetListItem.defaultProps = {

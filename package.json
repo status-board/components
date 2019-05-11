@@ -24,8 +24,8 @@
     "test:coverage:codecov": "codecov",
     "test:watch": "jest --watch",
     "ts:build": "tsc",
-    "eslint": "eslint src/**/*.{ts,tsx}",
-    "eslint:fix": "eslint --fix src/**/*.{ts,tsx}",
+    "eslint": "eslint \"src/**/*.{ts,tsx}\"",
+    "eslint:fix": "eslint --fix \"src/**/*.{ts,tsx}\"",
     "ts:watch": "tsc -w",
     "verify": "npm run verify:npmvet && npm run verify:david && npm run verify:audit && npm run verify:tscheck && npm run eslint && npm run test",
     "verify:circleci": "circleci config validate",
@@ -82,6 +82,7 @@
     }
   },
   "dependencies": {
+    "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.11",
     "@fortawesome/fontawesome-svg-core": "1.2.18",
     "@fortawesome/free-brands-svg-icons": "5.8.2",

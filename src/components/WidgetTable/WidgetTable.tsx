@@ -9,8 +9,4 @@ const Table = styled.table`
 
 const WidgetTable = ({ children }: { children: ReactNode }) => <Table>{children}</Table>;
 
-// WidgetTable.propTypes = {
-//     children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-// };
-
 export default WidgetTable;

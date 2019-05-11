@@ -20,6 +20,8 @@ const css = {
     })),
 };
 
-const Wrapper = ({ children, style }: Props): ReactElement => <span css={css} style={style}>{children}</span>;
+const Wrapper = ({ children, style }: Props): ReactElement => (
+    <span css={css} style={style}>{children}</span>
+);
 
 export default withTheme(Wrapper);

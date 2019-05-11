@@ -33,6 +33,8 @@ const css = {
     },
 };
 
-const Body = ({ children, style }: Props): ReactElement => <div css={css} style={style}>{children}</div>;
+const Body = ({ children, style }: Props): ReactElement => (
+    <div css={css} style={style}>{children}</div>
+);
 
 export default withTheme(Body);

@@ -13,6 +13,8 @@ const style = {
     flexDirection: 'column' as 'column',
 };
 
-const Container = ({ children }: Component): React.ReactElement => <span style={style}>{children}</span>;
+const Container = ({ children }: Component): React.ReactElement => (
+    <span style={style}>{children}</span>
+);
 
 export default Container;

@@ -7,10 +7,8 @@ const HeadCell = styled.th`
     font-weight: normal;
 `;
 
-const WidgetTableHeadCell = ({ children }: { children: ReactNode }) => <HeadCell>{children}</HeadCell>;
-
-// WidgetTableHeadCell.propTypes = {
-//     children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-// };
+const WidgetTableHeadCell = ({ children }: { children: ReactNode }) => (
+    <HeadCell>{children}</HeadCell>
+);
 
 export default WidgetTableHeadCell;

@@ -10,7 +10,12 @@ interface Props {
 }
 
 function WidgetBody(props: Props) {
-    const { children, disablePadding, isHeaderless, style } = props;
+    const {
+        children,
+        disablePadding,
+        isHeaderless,
+        style,
+    } = props;
 
     return (
         <Body

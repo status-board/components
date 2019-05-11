@@ -18,7 +18,9 @@ interface Props {
 }
 
 function WidgetStatusChip(props: Props) {
-    const { status, size, theme, style: _style } = props;
+    const {
+        status, size, theme, style: _style,
+    } = props;
 
     const colorKey = getColorKey(status);
 
@@ -29,7 +31,7 @@ function WidgetStatusChip(props: Props) {
         ..._style,
     };
 
-    return <Ship style={style}/>;
+    return <Ship style={style} />;
 }
 
 WidgetStatusChip.defaultProps = {

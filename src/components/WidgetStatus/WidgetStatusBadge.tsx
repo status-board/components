@@ -2,12 +2,12 @@ import React, { CSSProperties } from 'react';
 import { withTheme } from 'emotion-theming';
 import { SizeProp } from '@fortawesome/fontawesome-svg-core';
 
+import { Theme } from '@status-board/theme-manager/lib/types';
+import { typography } from '@status-board/theme-manager';
 import Badge from './Badge';
 import IconWrapper from './IconWrapper';
 import getColorKey from './get-color-key';
 import GetIcon from './GetIcon';
-import { Theme } from '@status-board/theme-manager/lib/types';
-import { typography } from '@status-board/theme-manager';
 
 interface WidgetStatusBadgeProps {
     status: string;
@@ -19,7 +19,9 @@ interface WidgetStatusBadgeProps {
 }
 
 function WidgetStatusBadge(props: WidgetStatusBadgeProps) {
-    const { status, message, meta, iconSize, style, theme } = props;
+    const {
+        status, message, meta, iconSize, style, theme,
+    } = props;
 
     const colorKey = getColorKey(status);
 
@@ -42,7 +44,7 @@ function WidgetStatusBadge(props: WidgetStatusBadgeProps) {
     return (
         <Badge style={rootStyle}>
             <IconWrapper>
-                <GetIcon status={status} size={iconSize} color={theme.colors[colorKey]}/>
+                <GetIcon status={status} size={iconSize} color={theme.colors[colorKey]} />
             </IconWrapper>
             {messageNode}
             {metaNode}

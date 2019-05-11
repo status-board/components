@@ -19,6 +19,8 @@ const css = {
     })),
 };
 
-const Container = ({ children, style }: Props): ReactElement => <div css={css} style={style}>{children}</div>;
+const Container = ({ children, style }: Props): ReactElement => (
+    <div css={css} style={style}>{children}</div>
+);
 
 export default withTheme(Container);

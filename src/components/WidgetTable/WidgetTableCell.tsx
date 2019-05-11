@@ -7,8 +7,4 @@ const Cell = styled.td`
 
 const WidgetTableCell = ({ children }: { children: ReactNode }) => <Cell>{children}</Cell>;
 
-// WidgetTableCell.propTypes = {
-//     children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-// };
-
 export default WidgetTableCell;

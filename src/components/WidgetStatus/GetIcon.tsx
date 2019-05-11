@@ -1,7 +1,9 @@
 import React from 'react';
 import find from 'lodash/find';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faCross, faSign, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+import {
+    faCheck, faCross, faSign, faHandsHelping,
+} from '@fortawesome/free-solid-svg-icons';
 import { IconProps } from '../Icons';
 
 const iconMapping = [
