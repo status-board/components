@@ -7,24 +7,17 @@ interface Props {
     style: CSSProperties;
 }
 
-export default function WidgetAvatar(props: Props): ReactNode {
-    const { children, size, style: _style } = props;
-
-    const style = {
+export default function WidgetAvatar({ children, size = 36, style = {} }: Props): ReactNode {
+    const avatarStyle = {
         fontSize: `calc(${size} / 2)`,
         height: size,
         width: size,
-        ..._style,
+        ...style,
     };
 
     return (
-        <Avatar style={style}>
+        <Avatar style={avatarStyle}>
             {children}
         </Avatar>
     );
 }
-
-WidgetAvatar.defaultProps = {
-    size: 36,
-    style: {},
-};

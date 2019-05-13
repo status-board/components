@@ -16,15 +16,14 @@ interface Props {
     unit?: number;
 }
 
-export default function WidgetCounter(props: Props) {
-    const {
-        align,
-        count,
-        preLabel,
+export default function WidgetCounter(
+    {
+        align = 'center',
+        count, preLabel,
         postLabel,
         unit,
-    } = props;
-
+    }: Props,
+) {
     return (
         <Container>
             {
@@ -50,7 +49,3 @@ export default function WidgetCounter(props: Props) {
         </Container>
     );
 }
-
-WidgetCounter.defaultProps = {
-    align: 'center',
-};
