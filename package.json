@@ -99,6 +99,7 @@
     "@status-board/theme-manager": "1.0.1",
     "emotion-theming": "10.0.10",
     "lodash": "4.17.11",
+    "opt-cli": "1.6.0",
     "react-pure-loaders": "2.0.1",
     "type-fest": "0.5.0"
   },
