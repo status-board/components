@@ -101,7 +101,7 @@
     "@fortawesome/free-regular-svg-icons": "5.8.2",
     "@fortawesome/free-solid-svg-icons": "5.8.2",
     "@fortawesome/react-fontawesome": "0.1.4",
-    "@status-board/theme-manager": "1.0.1",
+    "@status-board/theme-manager": "1.0.2",
     "emotion-theming": "10.0.10",
     "lodash": "4.17.11",
     "opt-cli": "1.6.0",
