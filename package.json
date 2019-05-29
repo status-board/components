@@ -62,7 +62,7 @@
     "lodash": "4.17.11",
     "opt-cli": "1.6.0",
     "react-pure-loaders": "2.0.1",
-    "type-fest": "0.5.1"
+    "type-fest": "0.5.2"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
