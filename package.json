@@ -89,7 +89,7 @@
     "@types/react-dom": "16.8.4",
     "@types/semantic-release": "15.13.0",
     "@types/storybook__addon-actions": "3.4.2",
-    "@types/storybook__addon-links": "3.3.4",
+    "@types/storybook__addon-links": "3.3.5",
     "@types/storybook__react": "4.0.1",
     "@typescript-eslint/eslint-plugin": "1.9.0",
     "@typescript-eslint/parser": "1.9.0",
